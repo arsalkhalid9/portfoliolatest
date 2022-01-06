@@ -40,7 +40,7 @@ function App() {
 		sections.forEach(section => {	
 			let sectionTop = section.offsetTop;
 			let sectionHeight = section.clientHeight;
-			if(window.pageYOffset >= sectionTop - (sectionHeight)/5){
+			if(window.pageYOffset >= sectionTop - (sectionHeight)/6){
 				current = section.getAttribute('id');
 			}	
 		})
