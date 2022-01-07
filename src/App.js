@@ -32,6 +32,8 @@ function App() {
 		})
 	},[scroll])
 
+	const [click, setClick] = useState(false);
+	const handleClick = () =>setClick(!click);
 
 	const sections = document.querySelectorAll('section');
 	const items = document.querySelectorAll('li');
@@ -56,25 +58,30 @@ function App() {
     <div className="App">
 		<header className={`${sticky ? "sticky":''}`}>
 			<div className="container">
-				<nav>
-					<a className="logo" href="#">
-						<img src={logo} alt="logo" />
-					</a>
-					<ul>
-						<li className="home active">
-							<a href="#home">Home</a>
-						</li>
-						<li className="about">
-							<a href="#about">About</a>
-						</li>
-						<li className="resume">
-							<a href="#resume">Resume</a>
-						</li>
-						<li className="contact">
-							<a href="#contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
+				<div className="d-flex justify-content-between align-items-center">
+						<a className="logo" href="#">
+							<img src={logo} alt="logo" />
+						</a>
+					<nav>
+						<ul className={click ? "nav-menu active" : "nav-menu"}> 
+							<li className="home active">
+								<a href="#home" onClick={handleClick}>Home</a>
+							</li>
+							<li className="about">
+								<a href="#about" onClick={handleClick}>About</a>
+							</li>
+							<li className="resume">
+								<a href="#resume" onClick={handleClick}>Resume</a>
+							</li>
+							<li className="contact">
+								<a href="#contact" onClick={handleClick}>Contact</a>
+							</li>
+						</ul>
+						<div className="menu-icon" onClick={handleClick}>
+							<i className= {click ? "fas fa-times":"fas fa-bars"}></i>
+						</div>
+					</nav>
+				</div>
 			</div>
 		</header>
     	

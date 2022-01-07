@@ -5,7 +5,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
     &.sticky {
         // background: rgba(0,0,0,.3);
         background: #000000;
@@ -15,32 +15,67 @@ header {
             max-width: 80px;
         }
     }
+    .logo {
+        max-width: 120px;
+        background: rgb(255 255 255 / 70%);
+        padding: 5px;
+        &:hover {
+            opacity: .75;
+        }
+        @media screen and (max-width: 991px) {
+            max-width: 80px;
+        }
+    }
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .logo {
-            max-width: 120px;
-            background: rgb(255 255 255 / 70%);
-            padding: 5px;
-            &:hover {
-                opacity: .75;
-            }
-            @media screen and (max-width: 991px) {
-                max-width: 80px;
-            }
-        }
-        ul {
+        .nav-menu {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             list-style: unset;
             padding: 0;
+            @media screen and (max-width: 575px) {
+                flex-direction: column;
+                position: absolute;
+                left: -100px;
+                top: 65px;
+                padding: 20px;
+                border-top: 1px solid #fff;
+            } 
+            &.active {
+                @media screen and (max-width: 575px) {
+                    background: #000000;
+                    left: 0;
+                    transition: .5s ease all;
+                    width: 100%;
+                }
+            }
             li {
                 &:not(:last-child) {
                     margin-right: rem(25px);
-                    @media screen and (max-width: 414px) {
-                        margin-right: rem(15px);
+                    @media screen and (max-width: 575px) {
+                        margin-right: 0;
+                        margin-bottom: rem(30px);
+                    }
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: #F06000;
+                    transition: .5s ease all;
+                    margin-top: rem(5px);
+                    @media screen and (max-width: 575px) {
+                        display: none;
+                    }
+
+                }
+                &:hover {
+                    &:after {
+                        width: 100%;
                     }
                 }
                 &::marker {
@@ -59,6 +94,17 @@ header {
                         color: #F06000;
                     }
                 }
+            }
+        }
+        .menu-icon {
+            display: none;
+            @media screen and (max-width: 575px) {
+                display: block;
+                font-size: 20px;
+                background: #F06000;
+                padding: rem(10px);
+                color: #fff;
+                border-radius: 5px;
             }
         }
     }

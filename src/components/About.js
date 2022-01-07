@@ -23,7 +23,7 @@ export default function About() {
                             </div>
                                 <p>Building stable and maintainable codebases using bootstrap and jquery.
                                     Implementing a mobile-first approach to existing websites.
-                                    Collaborating with designers to ensure designs were efficientt and
+                                    Collaborating with designers to ensure designs were efficient and
                                     technically sound.
                                     Working directly with clients to develop technical solutions
                                     Conducting testing to identify bugs and UI improvements.
