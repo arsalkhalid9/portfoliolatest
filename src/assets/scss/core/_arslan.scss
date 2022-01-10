@@ -112,6 +112,55 @@
         }
     }  
 }
+.Work {
+    background: #2B2B2B;
+    padding: rem(50px) 0;
+    h4 {
+        color: #fff;
+        margin-bottom: rem(25px);
+    }
+    .card {
+        margin-bottom: rem(30px);  
+        &__image {  
+            height: 200px; 
+            overflow: hidden;
+            img {
+                transition: .3s ease all;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &__desc {
+            padding: rem(10px) rem(20px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &--title {
+                color: #fff;
+            }
+            &--actions {
+                .btn {
+                    min-width: auto;
+                    height: 40px;
+                    width: 40px;
+                    padding-right: rem(15px);
+                    padding-left: rem(15px);
+                    @media screen and (max-width: 767px) {
+                        margin-bottom: 0;
+                    }
+                    svg {
+                        margin-right: 0;
+                    }
+                    &:not(:last-child) {
+                        margin-right: rem(6px);
+                    }
+                }
+            }
+        } 
+
+    }
+}
 
 .Contact {
     background: #191919;

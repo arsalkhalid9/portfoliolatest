@@ -3,6 +3,7 @@ import React ,{useEffect , useState} from "react";
 import logo from './assets/images/my-logo.png';
 import About from './components/About'
 import Resume from './components/Resume'
+import MyWork from './components/MyWork'
 import Contact from './components/Contact'
 import Home from './components/Home'
 import './App.css';
@@ -73,6 +74,9 @@ function App() {
 							<li className="resume">
 								<a href="#resume" onClick={handleClick}>Resume</a>
 							</li>
+							<li className="work">
+								<a href="#work" onClick={handleClick}>MyWork</a>
+							</li>
 							<li className="contact">
 								<a href="#contact" onClick={handleClick}>Contact</a>
 							</li>
@@ -88,6 +92,7 @@ function App() {
   		<Home />
 		<About />
 		<Resume />
+		<MyWork />
 		<Contact />
 		<footer>
 			<ul>

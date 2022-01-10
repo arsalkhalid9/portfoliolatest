@@ -5,6 +5,7 @@ import About from "./About";
 import Resume from "./Resume";
 import Uikit from './Uikit';
 import Contact from './Contact';
+import MyWork from './MyWork';
 
 export default function Main() {
     return (
@@ -15,6 +16,7 @@ export default function Main() {
                     <Route path="/home" exact component={Home} />
                     <Route path="/about" exact  component={About} />
                     <Route path="/resume" exact  component={Resume} />
+                    <Route path="/resume" exact  component={MyWork} />
                     <Route path="/contact" exact component={Contact} />
                 </Switch>
             </Router>
