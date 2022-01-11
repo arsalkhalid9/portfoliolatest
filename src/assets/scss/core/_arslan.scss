@@ -124,11 +124,32 @@
         &__image {  
             height: 200px; 
             overflow: hidden;
+            position: relative;
+            &:hover { 
+                span {
+                    left: 50%;
+                }
+            }
             img {
                 transition: .3s ease all;
                 &:hover {
                     transform: scale(1.2);
                 }
+            }
+            span {
+                width: 80%;
+                height: 80%;
+                background: rgba(55, 50, 51, .5);
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 50%;
+                left: -100%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                transition: .5s ease all;
+                cursor: pointer;
             }
         }
         &__desc {
@@ -140,6 +161,7 @@
                 color: #fff;
             }
             &--actions {
+                display: flex;
                 .btn {
                     min-width: auto;
                     height: 40px;
