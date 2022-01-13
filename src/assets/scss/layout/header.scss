@@ -39,7 +39,7 @@ header {
             @media screen and (max-width: 575px) {
                 flex-direction: column;
                 position: absolute;
-                left: -100px;
+                right: -100px;
                 top: 65px;
                 padding: 20px;
                 border-top: 1px solid #fff;
@@ -63,15 +63,11 @@ header {
                 &:after {
                     content: "";
                     display: block;
-                    height: 3px;
+                    height: 2px;
                     width: 0;
                     background: #F06000;
                     transition: .5s ease all;
                     margin-top: rem(5px);
-                    @media screen and (max-width: 575px) {
-                        display: none;
-                    }
-
                 }
                 &:hover {
                     &:after {
@@ -85,13 +81,16 @@ header {
                     color: #ffffff;
                     text-transform: uppercase;
                     &:hover {
-                    color: #ffffff;
-                    text-decoration: none;
+                        color: #F06000;
+                        text-decoration: none;
                     }
                 }
                 &.active {
                     a {
                         color: #F06000;
+                    }
+                    &:after {
+                        width: 100%;
                     }
                 }
             }

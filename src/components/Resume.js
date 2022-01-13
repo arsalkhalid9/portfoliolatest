@@ -1,6 +1,74 @@
 import React from 'react'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 export default function Resume() {
+
+    let progressbar=[
+        {  
+            id:'1',
+            title: 'Html5',
+            now: 90
+        },
+        {  
+            id:'2',
+            title: 'Css3',
+            now: 90
+        },  
+        {  
+            id:'3',
+            title: 'Bootstrap',
+            now: 90
+        },
+        {  
+            id:'4',
+            title: 'Jquery',
+            now: 60
+        },
+        {  
+            id:'5',
+            title: 'Javascript',
+            now: 50
+        },
+        {  
+            id:'6',
+            title: 'Web Accessibility 508',
+            now: 60
+        },
+        {  
+            id:'7',
+            title: 'Sass and Scss',
+            now: 85
+        },
+        {  
+            id:'8',
+            title: 'W3c Validation',
+            now: 100
+        },
+        {  
+            id:'9',
+            title: 'Transitions / Animation',
+            now: 80
+        },
+        {  
+            id:'10',
+            title: 'Adobe Photoshop/xd/figma',
+            now: 80
+        },
+        {  
+            id:'11',
+            title: 'Vue.js',
+            now: 60
+        }, 
+        {  
+            id:'12',
+            title: 'React.js',
+            now: 50
+        }, 
+        {  
+            id:'13',
+            title: 'EmailTemp',
+            now: 90
+        }
+    ]
     return (
         <section className="Resume" id="resume">
             <div className="container">
@@ -79,58 +147,14 @@ export default function Resume() {
                         <div className="col-md-9">
                             <p>The following are my skills with level of expertise</p>
                             <div className="mySkills">
-                                <div className="mySkills__progress">
-                                    <h6>Html5</h6>
-                                    <ProgressBar animated now={90} />  
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Css3</h6>
-                                    <ProgressBar animated now={90} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Bootstrap</h6>
-                                    <ProgressBar animated now={90} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Jquery</h6>
-                                    <ProgressBar animated now={60} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>JavaScript</h6>
-                                    <ProgressBar animated now={50} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Web Accessibility 508</h6>
-                                    <ProgressBar animated now={60} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Sass and Scss</h6>
-                                    <ProgressBar animated now={85} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>W3c Validation</h6>
-                                    <ProgressBar animated now={100} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Transitions / Animation</h6>
-                                    <ProgressBar animated now={80} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Adobe Photoshop</h6>
-                                    <ProgressBar animated now={80} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>Vue.js</h6>
-                                    <ProgressBar animated now={60} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>React js</h6>
-                                    <ProgressBar animated now={50} />
-                                </div>
-                                <div className="mySkills__progress">
-                                    <h6>EmailTemp</h6>
-                                    <ProgressBar animated now={90} />
-                                </div>
+                                {progressbar.map((item,i)=>{
+                                    return (
+                                        <div className="mySkills__progress" key={item.id}>
+                                            <h6>{item.title}</h6>
+                                            <ProgressBar animated now={item.now} />
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>

@@ -1,395 +1,236 @@
 import React from "react"
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import aqarat from '../assets/images/aqarat.png'
-import kn from '../assets/images/kn2021.png'
-import nf from '../assets/images/nf.png'
-import da3aity from '../assets/images/da3aity.png'
-import olshi from '../assets/images/olshi.png'
-import tdalal from '../assets/images/tdalal.png'
-import ottu from '../assets/images/ottu.png'
-import nextgen from '../assets/images/nextgen.png'
-import americagarden from '../assets/images/america-garden.png'
-import eventlify from '../assets/images/eventlify.png'
-import evalynelizabeth from '../assets/images/ee.png'
-import mtp from '../assets/images/mtp.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SimpleReactLightbox from 'simple-react-lightbox'
 import { SRLWrapper } from "simple-react-lightbox"
 import Button from "./Button"
 import {AnimatedOnScroll} from "react-animated-css-onscroll"
 
-
 export default function MyWork() {  
+    let projecttabfirst=[
+        {  
+            id: '1',
+            animate: '500',
+            image: 'eventlify.png', 
+            alt: 'Eventlify',
+            title: 'Eventlify',
+            imgOpen: '0',
+            linkPage: 'https://www.eventlify.com/'
+        },
+        {  
+            id: '2',
+            animate: '1000',
+            image: 'tdalal.png', 
+            alt: 'Tdalal',
+            title: 'Tdalal',
+            imgOpen: '1',
+            linkPage: 'https://tdalal.com.kw/en/'
+        }, 
+        {  
+            id: '3',
+            animate: '1500',
+            image: 'ottu.png', 
+            alt: 'Ottu',
+            title: 'Ottu',
+            imgOpen: '27',
+            linkPage: 'https://www.ottu.com/en/'
+        },  
+        {  
+            id: '4',
+            animate: '500',
+            image: 'da3aity.png', 
+            alt: 'Da3aity',
+            title: 'Da3aity',
+            imgOpen: '3',
+            linkPage: 'http://www.da3aity.com/'
+        }, 
+        {  
+            id: '5',
+            animate: '1000',
+            image: 'nextgen.png', 
+            alt: 'NextGen',
+            title: 'NextGen',
+            imgOpen: '4',
+            linkPage: 'https://www.nextgenconnect.com/'
+        },
+        {  
+            id: '6',
+            animate: '1500',
+            image: 'kn2021.png', 
+            alt: 'Kn',
+            title: 'Kn2021',
+            imgOpen: '5',
+            linkPage: '#'
+        }, 
+        {  
+            id: '7',
+            animate: '500',
+            image: 'nf.png', 
+            alt: 'Nf',
+            title: 'National Fund',
+            imgOpen: '6',
+            linkPage: '#'
+        }, 
+        {  
+            id: '8',
+            animate: '1000',
+            image: 'olshi.png', 
+            alt: 'Olshi',
+            title: 'Olshi',
+            imgOpen: '7',
+            linkPage: '#'
+        },
+        {  
+            id: '9',
+            animate: '1500',
+            image: 'america-garden.png', 
+            alt: 'America Gardens',
+            title: 'America Gardens',
+            imgOpen: '8',
+            linkPage: 'https://americagardensusa.com/'
+        },
+        {  
+            id: '10',
+            animate: '500',
+            image: 'aqarat.png', 
+            alt: 'Aqarat',
+            title: 'Aqarat',
+            imgOpen: '0',
+            linkPage: '#'
+        },
+        {  
+            id: '11',
+            animate: '1000',
+            image: 'ee.png', 
+            alt: 'Evalyn Elizabeth',
+            title: 'Evalyn Elizabeth',
+            imgOpen: '10',
+            linkPage: 'https://www.evalynelizabeth.com/'
+        },
+        {  
+            id: '12',
+            animate: '1500',
+            image: 'mtp.png', 
+            alt: 'Michele Therese',
+            title: 'Michele Therese',
+            imgOpen: '11',
+            linkPage: 'https://www.micheletherese.com/'
+        }
+    ]
+    let projecttabsecond=[
+        {  
+            id: '1',
+            animate: '500',
+            image: 'tdalal.png', 
+            alt: 'Tdalal',
+            title: 'Tdalal',
+            imgOpen: '0',
+            linkPage: 'https://tdalal.com.kw/en/'
+        },
+        {  
+            id: '2',
+            animate: '1000',
+            image: 'da3aity.png', 
+            alt: 'Da3aity',
+            title: 'Da3aity',
+            imgOpen: '1',
+            linkPage: 'http://www.da3aity.com/'
+        },
+        {  
+            id: '3',
+            animate: '1500',
+            image: 'olshi.png', 
+            alt: 'Olshi',
+            title: 'Olshi',
+            imgOpen: '2',
+            linkPage: '#'
+        },
+        {  
+            id: '4',
+            animate: '500',
+            image: 'ee.png', 
+            alt: 'Evalyn Elizabeth',
+            title: 'Evalyn Elizabeth',
+            imgOpen: '3',
+            linkPage: 'https://www.evalynelizabeth.com/'
+        }  
+    ]
     return (
-        <>
-            <section className="Work" id="work">
-                <div className="container">
-                    <h4>My Works</h4>
-                    <Tabs defaultActiveKey="all" id="uncontrolled-tab-example">
-                        <Tab eventKey="all" title="All"> 
-                            <SimpleReactLightbox> 
-                                <SRLWrapper>         
-                                    <div className="row"> 
-                                        <div className="col-lg-4 col-sm-6">
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1500">
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={aqarat} alt="aqarat" className="img-fluid" id="1"/>
+        <section className="Work" id="work">
+            <div className="container">
+                <h4>My Works</h4>
+                <Tabs defaultActiveKey="all" id="uncontrolled-tab-example">
+                    <Tab eventKey="all" title="All"> 
+                        <SimpleReactLightbox> 
+                            <SRLWrapper>         
+                                <div className="row"> 
+                                    {projecttabfirst.map((item,i)=>{
+                                        return (
+                                            <div className="col-lg-4 col-sm-6" key={item.id}>
+                                                <AnimatedOnScroll animationIn="fadeInUp" animationOut="fadeInOut" animationInDuration={item.animate}>
+                                                    <div className="card"> 
+                                                        <div className="card__image">
+                                                            <img src={require(`../assets/images/${item.image}`).default} alt={item.alt} className="img-fluid"/>
+                                                        </div>
+                                                        <div className="card__desc">
+                                                            <div className="card__desc--title">
+                                                                {item.title}
+                                                            </div>
+                                                            <div className="card__desc--actions">   
+                                                                <Button props={item.imgOpen}/>
+                                                                <a href={item.linkPage} className="btn btn-primary" target="_blank">
+                                                                    <span>
+                                                                        <FontAwesomeIcon icon={['fas', 'link']} />
+                                                                    </span>
+                                                                </a>
+                                                            </div>  
+                                                        </div>    
                                                     </div>
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Aqarat
-                                                        </div>
-                                                        <div className="card__desc--actions">   
-                                                            <Button props={0}/>
-                                                            <a href="#" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>    
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6">
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1000">
-                                                <div className="card"> 
-                                                    <div  className="card__image">
-                                                        <img src={kn} alt="kn" className="img-fluid"/>
-                                                    </div>
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Kn2021
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={1}/>
-                                                            <a href="#" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>    
-                                                </div> 
-                                            </AnimatedOnScroll>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="500">
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={nf} alt="nf" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            National Fund
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={2}/>
-                                                            <a href="#" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6">
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1500"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={da3aity} alt="da3aity" className="img-fluid"/>
-                                                    </div>
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Da3aity
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={3}/>
-                                                            <a href="http://www.da3aity.com/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>    
-                                                </div>
-                                            </AnimatedOnScroll>  
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1000"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={olshi} alt="olshi" className="img-fluid"/>
-                                                    </div>
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Olshi
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={4}/>
-                                                            <a href="#" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>       
-                                                </div>
-                                            </AnimatedOnScroll> 
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="500"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={tdalal} alt="tdalal" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Tdalal
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={5}/>
-                                                            <a href="https://tdalal.com.kw/en/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6">
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1500">  
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={ottu} alt="ottu" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Ottu
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={6}/>
-                                                            <a href="https://www.ottu.com/en/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1000"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={nextgen} alt="nextgen" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            NextGen
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={7}/>
-                                                            <a href="https://www.nextgenconnect.com/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="500"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={americagarden} alt="america-garden" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            America Gardens
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={8}/>
-                                                            <a href="https://americagardensusa.com/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" isVisible={true} animationInDuration="1500"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={eventlify} alt="eventlify" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Eventlify
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={9}/>
-                                                            <a href="https://www.eventlify.com/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
                                                 </AnimatedOnScroll>
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <AnimatedOnScroll animationIn="fadeInUp" animationInDuration="1000"> 
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={evalynelizabeth} alt="ee" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Evalyn Elizabeth
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={10}/>
-                                                            <a href="https://www.evalynelizabeth.com/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6">
-                                            <AnimatedOnScroll animationIn="fadeInUp" animationOut="fadeInOut" animationInDuration="500" animateOnMount="false">  
-                                                <div className="card"> 
-                                                    <div className="card__image">
-                                                        <img src={mtp} alt="mtp" className="img-fluid"/>
-                                                    </div> 
-                                                    <div className="card__desc">
-                                                        <div className="card__desc--title">
-                                                            Michele Therese 
-                                                        </div>
-                                                        <div className="card__desc--actions"> 
-                                                            <Button props={11}/>
-                                                            <a href="https://www.micheletherese.com/" className="btn btn-primary">
-                                                                <span>
-                                                                    <FontAwesomeIcon icon={['fas', 'link']} />
-                                                                </span>
-                                                            </a>
-                                                        </div>  
-                                                    </div>   
-                                                </div>
-                                            </AnimatedOnScroll>
-                                        </div> 
-                                    </div>
-                                </SRLWrapper>
-                            </SimpleReactLightbox>   
-                        </Tab>
-                        <Tab eventKey="ecommerce" title="E-commerce">
-                            <SimpleReactLightbox> 
-                                <SRLWrapper>
-                                    <div className="row">
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <div className="card"> 
-                                                <div className="card__image">
-                                                    <img src={da3aity} alt="da3aity" className="img-fluid"/>
-                                                </div>
-                                                <div className="card__desc">
-                                                    <div className="card__desc--title">
-                                                        Da3aity
-                                                    </div>
-                                                    <div className="card__desc--actions"> 
-                                                        <Button props={0}/>
-                                                        <a href="http://www.da3aity.com/" className="btn btn-primary">
-                                                            <span>
-                                                                <FontAwesomeIcon icon={['fas', 'link']} />
-                                                            </span>
-                                                        </a>
-                                                    </div>  
-                                                </div>    
-                                            </div> 
-                                        </div> 
-                                        <div className="col-lg-4 col-sm-6">
-                                            <div className="card"> 
-                                                <div className="card__image">
-                                                    <img src={olshi} alt="olshi" className="img-fluid"/>
-                                                </div>
-                                                <div className="card__desc">
-                                                    <div className="card__desc--title">
-                                                    Olshi
-                                                    </div>
-                                                    <div className="card__desc--actions"> 
-                                                        <Button props={1}/>
-                                                        <a href="#" className="btn btn-primary">
-                                                            <span>
-                                                                <FontAwesomeIcon icon={['fas', 'link']} />
-                                                            </span>
-                                                        </a>
-                                                    </div>  
-                                                </div>       
-                                            </div>     
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <div className="card"> 
-                                                <div className="card__image">
-                                                    <img src={tdalal} alt="tdalal" className="img-fluid"/>
-                                                </div> 
-                                                <div className="card__desc">
-                                                    <div className="card__desc--title">
-                                                    Tdalal
-                                                    </div>
-                                                    <div className="card__desc--actions"> 
-                                                        <Button props={2}/>
-                                                        <a href="https://tdalal.com.kw/en/" className="btn btn-primary">
-                                                            <span>
-                                                                <FontAwesomeIcon icon={['fas', 'link']} />
-                                                            </span>
-                                                        </a>
-                                                    </div>  
-                                                </div>   
                                             </div>
-                                        </div>
-                                        <div className="col-lg-4 col-sm-6"> 
-                                            <div className="card"> 
-                                                <div className="card__image">
-                                                    <img src={evalynelizabeth} alt="ee" className="img-fluid"/>
-                                                </div> 
-                                                <div className="card__desc">
-                                                    <div className="card__desc--title">
-                                                        Evalyn Elizabeth
+                                        )
+                                    })}
+                                </div>   
+                            </SRLWrapper>
+                        </SimpleReactLightbox>   
+                    </Tab>
+                    <Tab eventKey="ecommerce" title="E-commerce">
+                        <SimpleReactLightbox> 
+                            <SRLWrapper>
+                                <div className="row"> 
+                                    {projecttabsecond.map((item,i)=>{
+                                        return (
+                                            <div className="col-lg-4 col-sm-6" key={item.id}>
+                                                <AnimatedOnScroll animationIn="fadeInUp" animationOut="fadeInOut" animationInDuration={item.animate}>
+                                                    <div className="card"> 
+                                                        <div className="card__image">
+                                                            <img src={require(`../assets/images/${item.image}`).default} alt={item.alt} className="img-fluid"/>
+                                                        </div>
+                                                        <div className="card__desc">
+                                                            <div className="card__desc--title">
+                                                                {item.title}
+                                                            </div>
+                                                            <div className="card__desc--actions">   
+                                                                <Button props={item.imgOpen}/>
+                                                                <a href={item.linkPage} className="btn btn-primary" target="_blank">
+                                                                    <span>
+                                                                        <FontAwesomeIcon icon={['fas', 'link']} />
+                                                                    </span>
+                                                                </a>
+                                                            </div>  
+                                                        </div>    
                                                     </div>
-                                                    <div className="card__desc--actions"> 
-                                                        <Button props={3}/>
-                                                        <a href="https://www.evalynelizabeth.com/" className="btn btn-primary">
-                                                            <span>
-                                                                <FontAwesomeIcon icon={['fas', 'link']} />
-                                                            </span>
-                                                        </a>
-                                                    </div>  
-                                                </div>   
+                                                </AnimatedOnScroll>
                                             </div>
-                                        </div> 
-                                    </div>
-                                </SRLWrapper>  
-                            </SimpleReactLightbox>  
-                        </Tab>
-                    </Tabs>   
-                </div> 
-            </section> 
-        </>
+                                        )
+                                    })}
+                                </div>   
+                            </SRLWrapper>  
+                        </SimpleReactLightbox>  
+                    </Tab>
+                </Tabs>   
+            </div> 
+        </section>
     )
 }
