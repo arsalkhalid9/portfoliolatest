@@ -35,8 +35,8 @@ export default function About() {
                                     <a href={cv} className="btn btn-primary">
                                         <span>
                                             <FontAwesomeIcon icon={['fas', 'download']} />
-                                            Download Resume
                                         </span>
+                                        Download Resume
                                     </a>
                                 </div>
                                 <ul>
