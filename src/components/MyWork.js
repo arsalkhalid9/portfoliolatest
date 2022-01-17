@@ -33,7 +33,7 @@ export default function MyWork() {
             image: 'ottu.png', 
             alt: 'Ottu',
             title: 'Ottu',
-            imgOpen: '27',
+            imgOpen: '2',
             linkPage: 'https://www.ottu.com/en/'
         },  
         {  
@@ -96,7 +96,7 @@ export default function MyWork() {
             image: 'aqarat.png', 
             alt: 'Aqarat',
             title: 'Aqarat',
-            imgOpen: '0',
+            imgOpen: '9',
             linkPage: '#'
         },
         {  
