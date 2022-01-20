@@ -12,11 +12,11 @@ export default function MyWork() {
         {  
             id: '1',
             animate: '500',
-            image: 'eventlify.png', 
-            alt: 'Eventlify',
-            title: 'Eventlify',
+            image: 'nutru.jpeg', 
+            alt: 'Nutru',
+            title: 'Nutru',
             imgOpen: '0',
-            linkPage: 'https://www.eventlify.com/'
+            linkPage: 'http://logicsdrive.net/clients/email/images/new-nutru16/'
         },
         {  
             id: '2',
@@ -61,7 +61,7 @@ export default function MyWork() {
             alt: 'Kn',
             title: 'Kn2021',
             imgOpen: '5',
-            linkPage: '#'
+            linkPage: 'https://kuwaitnet.com/'
         }, 
         {  
             id: '7',
@@ -70,7 +70,7 @@ export default function MyWork() {
             alt: 'Nf',
             title: 'National Fund',
             imgOpen: '6',
-            linkPage: '#'
+            linkPage: 'https://www.nationalfund.gov.kw/en/'
         }, 
         {  
             id: '8',
@@ -97,7 +97,7 @@ export default function MyWork() {
             alt: 'Aqarat',
             title: 'Aqarat',
             imgOpen: '9',
-            linkPage: '#'
+            linkPage: 'https://www.aqarat.com.kw/'
         },
         {  
             id: '11',
@@ -116,17 +116,53 @@ export default function MyWork() {
             title: 'Michele Therese',
             imgOpen: '11',
             linkPage: 'https://www.micheletherese.com/'
+        },
+        {  
+            id: '13',
+            animate: '500',
+            image: 'duwaween.png', 
+            alt: 'Duwaween',
+            title: 'Duwaween',
+            imgOpen: '12',
+            linkPage: 'https://web.duwaween.games/en/'
+        },
+        {  
+            id: '14',
+            animate: '1000',
+            image: 'makeawag.png', 
+            alt: 'Make a Wag',
+            title: 'Make a Wag',
+            imgOpen: '13',
+            linkPage: 'https://www.makeawag.org/'
+        },
+        {  
+            id: '15',
+            animate: '1500',
+            image: 'movestudio.png', 
+            alt: 'Move Studio',
+            title: 'Move Studio',
+            imgOpen: '14',
+            linkPage: 'https://www.movestudiopilates.com/'
+        },
+        {  
+            id: '16',
+            animate: '500',
+            image: 'eventlify.png', 
+            alt: 'Eventlify',
+            title: 'Eventlify',
+            imgOpen: '15',
+            linkPage: 'https://www.eventlify.com/'
         }
     ]
     let projecttabsecond=[
         {  
             id: '1',
             animate: '500',
-            image: 'tdalal.png', 
-            alt: 'Tdalal',
-            title: 'Tdalal',
+            image: 'nutru.jpeg', 
+            alt: 'Nutru',
+            title: 'Nutru',
             imgOpen: '0',
-            linkPage: 'https://tdalal.com.kw/en/'
+            linkPage: 'http://logicsdrive.net/clients/email/images/new-nutru16/'
         },
         {  
             id: '2',
@@ -154,7 +190,16 @@ export default function MyWork() {
             title: 'Evalyn Elizabeth',
             imgOpen: '3',
             linkPage: 'https://www.evalynelizabeth.com/'
-        }  
+        }, 
+        {  
+            id: '5',
+            animate: '1000',
+            image: 'tdalal.png', 
+            alt: 'Tdalal',
+            title: 'Tdalal',
+            imgOpen: '4',
+            linkPage: 'https://tdalal.com.kw/en/'
+        } 
     ]
     return (
         <section className="Work" id="work">
